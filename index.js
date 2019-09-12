@@ -73,7 +73,8 @@ export default class Spinner extends React.PureComponent {
     super(props);
     this.state = {
       visible: this.props.visible,
-      textContent: this.props.textContent
+      headerContent: this.props.headerContent,
+      textContent: this.props.textContent,
     };
   }
 
