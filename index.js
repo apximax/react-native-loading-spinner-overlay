@@ -48,8 +48,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     position: 'absolute'
   },
-  textContent: {
+  headerContent: {
     top: 80,
+    height: 50,
+    fontSize: 22,
+    fontWeight: 'bold'
+  },
+  textContent: {
+    top: 110,
     height: 50,
     fontSize: 20,
     fontWeight: 'bold'
@@ -90,6 +96,7 @@ export default class Spinner extends React.PureComponent {
     visible: false,
     cancelable: false,
     textContent: '',
+    headerContent: '',
     animation: 'none',
     color: 'white',
     size: 'large', // 'normal',
@@ -127,6 +134,9 @@ export default class Spinner extends React.PureComponent {
           />
         )}
         <View style={[styles.textContainer, { ...this.props.indicatorStyle }]}>
+          <Text style={[styles.headerContent, this.props.headerStyle]}>
+            {this.state.headerContent}
+          </Text>
           <Text style={[styles.textContent, this.props.textStyle]}>
             {this.state.textContent}
           </Text>
