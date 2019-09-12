@@ -49,13 +49,13 @@ const styles = StyleSheet.create({
     position: 'absolute'
   },
   headerContent: {
-    top: 80,
+    top: 100,
     height: 50,
     fontSize: 22,
     fontWeight: 'bold'
   },
   textContent: {
-    top: 110,
+    top: 105,
     height: 50,
     fontSize: 20,
     fontWeight: 'bold'
