@@ -136,10 +136,10 @@ export default class Spinner extends React.PureComponent {
         )}
         <View style={[styles.textContainer, { ...this.props.indicatorStyle }]}>
           <Text style={[styles.headerContent, this.props.headerStyle]}>
-            {this.state.headerContent}
+            {this.props.headerContent}
           </Text>
           <Text style={[styles.textContent, this.props.textStyle]}>
-            {this.state.textContent}
+            {this.props.textContent}
           </Text>
         </View>
       </View>
