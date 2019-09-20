@@ -52,12 +52,14 @@ const styles = StyleSheet.create({
     top: 100,
     height: 50,
     fontSize: 22,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
   textContent: {
     top: 105,
     fontSize: 20,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
   activityIndicator: {
     flex: 1
