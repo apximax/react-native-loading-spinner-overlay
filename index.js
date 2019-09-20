@@ -56,7 +56,6 @@ const styles = StyleSheet.create({
   },
   textContent: {
     top: 105,
-    height: 50,
     fontSize: 20,
     fontWeight: 'bold'
   },
@@ -134,7 +133,7 @@ export default class Spinner extends React.PureComponent {
             style={[styles.activityIndicator, { ...this.props.indicatorStyle }]}
           />
         )}
-        <View style={[styles.textContainer, { ...this.props.indicatorStyle }]}>
+        <View style={[styles.textContainer, { ...this.props.textContainerStyle }]}>
           <Text style={[styles.headerContent, this.props.headerStyle]}>
             {this.props.headerContent}
           </Text>
